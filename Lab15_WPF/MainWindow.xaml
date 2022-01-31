@@ -1,0 +1,114 @@
+﻿<Window x:Class="Lab15_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Span  FontSize="30" Foreground="#FFF93180">
+                    Откройте для себя                    
+                            <Bold>Мальдивы</Bold>                       
+                    </Span>
+                </Paragraph>                
+                <Paragraph TextAlignment="Left">
+                    Хотите стать предметом зависти друзей? Небрежно оброните в разговоре фразу "Я еду в отпуск на Мальдивы", 
+                желательно в разгар зимы. Ничто так не напоминает рай, как Мальдивы, — цепь из 26 атоллов с песчаными
+                белоснежными пляжами, бирюзовой водой и курортами с потрясающими бунгало на воде.
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                       
+                        <TableRow>
+                            <TableCell TextAlignment="Center">
+                                <Paragraph>
+                                    <Floater>
+                                        <BlockUIContainer>
+                                            <Image Source="Data/Daalu1.png" Width="200" Height="200"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>                        
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Foreground="#FF19E8DD" TextAlignment="Center" FontSize="20" FontWeight="Bold" Margin="100">
+                                    Даалу
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell TextAlignment="Center">
+                                <Paragraph>
+                                    <Floater>
+                                        <BlockUIContainer>
+                                            <Image Source="Data/Olhuveli.png" Width="200" Height="200"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Foreground="#FF8874CA" TextAlignment="Center" FontSize="20" FontWeight="Bold" Margin="100">
+                                    Olhuveli Island
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell TextAlignment="Center">
+                                <Paragraph>
+                                    <Floater>
+                                        <BlockUIContainer>
+                                            <Image Source="Data/Furanafushi.png" Width="200" Height="200"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Foreground="#FF70CAF1" TextAlignment="Center" FontSize="20" FontWeight="Bold" Margin="100">
+                                    Furanafushi Island
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    Рекомендации отелей и апартаментов:
+                </Paragraph>
+                <List MarkerStyle="Circle">
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://www.tripadvisor.ru/Hotel_Review-g3612500-d316955-Reviews-Sun_Siyam_Vilu_Reef-Dhaalu_Atoll.html">Sun Siyam Vilu Reef</Hyperlink> 
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://www.tripadvisor.ru/Hotel_Review-g3612502-d2420502-Reviews-Niyama_Private_Islands_Maldives-Niyama.html">Niyama Private Islands Maldives</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://www.tripadvisor.ru/Hotel_Review-g3612500-d14787461-Reviews-Sun_Siyam_Iru_Veli-Dhaalu_Atoll.html">Sun Siyam Iru Veli</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://www.tripadvisor.ru/Hotel_Review-g13313626-d10717754-Reviews-Kandima_Maldives-Kandima.html">Kandima Maldives</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://www.tripadvisor.ru/Hotel_Review-g6855039-d1095837-Reviews-Thulhagiri_Island_Resort-Thulhaagiri_Island.html">Thulhagiri Island Resort</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>

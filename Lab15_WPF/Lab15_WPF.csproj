@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Daalu1.png" />
+    <None Remove="Data\Furanafushi.png" />
+    <None Remove="Data\Olhuveli.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Daalu1.png" />
+    <Resource Include="Data\Furanafushi.png" />
+    <Resource Include="Data\Olhuveli.png" />
+  </ItemGroup>
+
+</Project>
